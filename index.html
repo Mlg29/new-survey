@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+
+    <div class="container">
+                <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+                <form id="survey-form">
+                    <label id="name-label">Name: </label><br>
+                    <input type="text" placeholder="Enter your name" name="name" id="name" required>
+                <br><br>
+
+                <label id="email-label">Email: </label><br>
+                <input type="email" placeholder="Enter your Email" name="email" id="email" required>
+                <br><br>
+
+                <label id="number-label">Age: </label><br>
+                <input type="number" placeholder="Age" name="age" id="number" min="18" max="40" required>
+                <br><br>
+
+                <label id="select-label">Which option best describes your current role?</label><br><br>
+                <select id="dropdown" placeholder="Select an option" name="fname">
+                    <option value="Student">Student</option>
+                    <option value="full time job">Full time job</option>
+                    <option value="full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <br><br>
+
+                <label id="recc">How likely is that you would recommend<br> freeCodeCamp to a friend?</label><br><br>
+                <input type="radio" name="recommendation" id="rad">Definitely
+                <br>
+                <input type="radio" name="recommendation" id="rad">Maybe
+                <br>
+                <input type="radio" name="recommendation" id="rad">Not sure
+                <br><br>
+                <label id="like">What do you like most in FCC: </label><br><br>
+                <select id="like1">
+                    <option name="like" value="challenges">Challenges</option>
+                    <option name="like" value="projects">Projects</option>
+                    <option name="like" value="community">Community</option>
+                    <option name="like" value="openSource">Open Source</option>
+                </select>
+                <br><br><br>
+                   
+                <label id="improve">Things that should be improved in the future<br> (check all that apply):</label><br><br> 
+                <input type="checkbox" name="fproject">Front-end Projects<br>
+                <input type="checkbox" name="bproject">Back-end Projects<br>
+                <input type="checkbox" name="data">Data Visualization<br></label>
+                <input type="checkbox" name="challenges">Challenges<br>
+                <input type="checkbox" name="open">Open Source Community<br>
+                <input type="checkbox" name="gitter">Gitter help rooms<br>
+                <input type="checkbox" name="videos">Videos<br>
+                <input type="checkbox" name="meetup">City Meetups<br>
+                <input type="checkbox" name="wiki">Wiki<br>
+                <input type="checkbox" name="forum">Forum<br>
+                <input type="checkbox" name="courses">Additional Courses<br>
+                <br><br> 
+                    
+                <label id="suggestion">Any Comments or Suggestions? </label><br>
+                <br>
+                <textarea name="comment" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit" id="submit">
+                <br><br>
+                </form>
+    </div>
+    
+</body>
+</html>
